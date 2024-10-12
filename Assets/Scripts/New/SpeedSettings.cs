@@ -78,6 +78,7 @@ public class SpeedSettings : MonoBehaviour
     {
         while (car.state != AICar.CarState.STOPPED)
         {
+            Debug.Log("boom");
             yield return new WaitForFixedUpdate();
         }
         driver.Tracking = EyeContactAfterYielding;
@@ -98,6 +99,7 @@ public class SpeedSettings : MonoBehaviour
 
     internal string GetCustomBehaviourDataString()
     {
+        Debug.Log("trigger");
         string result = "";
         foreach(var cbd in customBehaviourData)
         {
