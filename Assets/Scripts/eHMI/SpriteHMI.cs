@@ -12,9 +12,13 @@ public class SpriteHMI : HMI
 	[SerializeField]
 	Sprite walk;
 	[SerializeField]
-	Sprite disabled;
+    Sprite welcome;
+    [SerializeField]
+    Sprite disabled;
+    [SerializeField]
+    Sprite danger;
 
-	public override void Display(HMIState state)
+    public override void Display(HMIState state)
     {
         base.Display(state);
         Sprite spr = null;
@@ -25,6 +29,12 @@ public class SpriteHMI : HMI
                 break;
             case HMIState.WALK:
                 spr = walk;
+                break;
+            case HMIState.WELCOME:
+                spr = welcome;
+                break;
+            case HMIState.DANGER:
+                spr = danger;
                 break;
             default:
                 spr = disabled;

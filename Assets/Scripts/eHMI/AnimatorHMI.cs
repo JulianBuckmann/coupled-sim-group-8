@@ -18,12 +18,18 @@ public class AnimatorHMI : HMI
     string walkTrigger = "walk";
     [SerializeField]
     string disabledTrigger = "disabled";
+    [SerializeField]
+    string welcomeTrigger = "welcome";
 
     //texture to be set on certain state changes
     [SerializeField]
     Texture2D stop;
     [SerializeField]
     Texture2D walk;
+    [SerializeField]
+    Texture2D welcome;
+    [SerializeField]
+    Texture2D danger;
     [SerializeField]
     Texture2D disabled;
 
@@ -43,6 +49,14 @@ public class AnimatorHMI : HMI
                 break;
             case HMIState.WALK:
                 material.mainTexture = walk;
+                animator.SetTrigger(walkTrigger);
+                break;
+            case HMIState.WELCOME:
+                material.mainTexture = welcome;
+                animator.SetTrigger(walkTrigger);
+                break;
+            case HMIState.DANGER:
+                material.mainTexture = danger;
                 animator.SetTrigger(walkTrigger);
                 break;
             default:
