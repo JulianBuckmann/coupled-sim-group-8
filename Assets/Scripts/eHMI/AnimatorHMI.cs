@@ -13,9 +13,9 @@ public class AnimatorHMI : HMI
 
     //Animator triggers
     [SerializeField]
-    string stopTrigger = "stop";
+    string stopTrigger = "merging";
     [SerializeField]
-    string walkTrigger = "walk";
+    string walkTrigger = "restart";
     [SerializeField]
     string disabledTrigger = "disabled";
     [SerializeField]
@@ -23,7 +23,7 @@ public class AnimatorHMI : HMI
 
     //texture to be set on certain state changes
     [SerializeField]
-    Texture2D stop;
+    Texture2D merging;
     [SerializeField]
     Texture2D walk;
     [SerializeField]
@@ -44,7 +44,7 @@ public class AnimatorHMI : HMI
         switch (state)
         {
             case HMIState.STOP:
-                material.mainTexture = stop;
+                material.mainTexture = merging;
                 animator.SetTrigger(stopTrigger);
                 break;
             case HMIState.WALK:

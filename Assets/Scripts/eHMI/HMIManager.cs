@@ -53,14 +53,14 @@ public class HMIManager : MonoBehaviour
                 var state = (HMIState)Variants.GetValue(j);
                 var stateName = Enum.GetName(typeof(HMIState), state);
                 if (GUILayout.Button($"{stateName}"))
-                {
-                    _hmis[i].Display(state);
-                    host.BroadcastMessage(new ChangeHMI
                     {
-                        HMI = i,
-                        State = (int)state
-                    });
-                }
+                        _hmis[i].Display(state);
+                        host.BroadcastMessage(new ChangeHMI
+                        {
+                            HMI = i,
+                            State = (int)state
+                        });
+                    }
             }
 
             GUILayout.EndHorizontal();

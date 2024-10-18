@@ -8,7 +8,7 @@ public class SpriteHMI : HMI
     [SerializeField]
     SpriteRenderer _renderer;
     [SerializeField]
-    Sprite stop;
+    Sprite merging;
 	[SerializeField]
 	Sprite walk;
 	[SerializeField]
@@ -25,7 +25,7 @@ public class SpriteHMI : HMI
         switch (state)
         {
             case HMIState.STOP:
-                spr = stop;
+                spr = merging;
                 break;
             case HMIState.WALK:
                 spr = walk;
