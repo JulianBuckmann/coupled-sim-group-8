@@ -10,6 +10,7 @@ public enum HMIState
     WALK,
     WELCOME,
     DANGER,
+    CLEAR,
 }
 
 //script that synchronizes hmi state between all players

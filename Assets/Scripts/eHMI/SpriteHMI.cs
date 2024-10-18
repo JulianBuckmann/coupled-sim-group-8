@@ -17,6 +17,8 @@ public class SpriteHMI : HMI
     Sprite disabled;
     [SerializeField]
     Sprite danger;
+    [SerializeField]
+    Sprite clear;
 
     public override void Display(HMIState state)
     {
@@ -35,6 +37,9 @@ public class SpriteHMI : HMI
                 break;
             case HMIState.DANGER:
                 spr = danger;
+                break;
+            case HMIState.CLEAR:
+                spr = clear;
                 break;
             default:
                 spr = disabled;
