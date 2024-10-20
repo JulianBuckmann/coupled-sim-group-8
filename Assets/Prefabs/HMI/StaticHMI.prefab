@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentState: 0
   _renderer: {fileID: 2863568381179415621}
-  merging: {fileID: 0}
+  stop: {fileID: 21300000, guid: a907506d5661ce346b863b34e402d9a0, type: 3}
   walk: {fileID: 21300000, guid: 848cc5cb3f21d6c4b83d718aa9970417, type: 3}
   welcome: {fileID: 21300000, guid: 9c705d268c93d0f41997233861dc2c23, type: 3}
   disabled: {fileID: 21300000, guid: ccef1623427baf14aafcfad907d54068, type: 3}

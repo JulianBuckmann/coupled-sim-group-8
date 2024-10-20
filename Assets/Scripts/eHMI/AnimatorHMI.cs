@@ -20,16 +20,20 @@ public class AnimatorHMI : HMI
     string disabledTrigger = "disabled";
     [SerializeField]
     string welcomeTrigger = "welcome";
+    [SerializeField]
+    string clearTrigger = "clear";
 
     //texture to be set on certain state changes
     [SerializeField]
-    Texture2D merging;
+    Texture2D stop;
     [SerializeField]
     Texture2D walk;
     [SerializeField]
     Texture2D welcome;
     [SerializeField]
     Texture2D danger;
+    [SerializeField]
+    Texture2D clear;
     [SerializeField]
     Texture2D disabled;
 
@@ -44,7 +48,7 @@ public class AnimatorHMI : HMI
         switch (state)
         {
             case HMIState.STOP:
-                material.mainTexture = merging;
+                material.mainTexture = stop;
                 animator.SetTrigger(stopTrigger);
                 break;
             case HMIState.WALK:
@@ -58,6 +62,10 @@ public class AnimatorHMI : HMI
             case HMIState.DANGER:
                 material.mainTexture = danger;
                 animator.SetTrigger(walkTrigger);
+                break;
+            case HMIState.CLEAR:
+                material.mainTexture = clear;
+                animator.SetTrigger(clearTrigger);
                 break;
             default:
                 material.mainTexture = disabled;
