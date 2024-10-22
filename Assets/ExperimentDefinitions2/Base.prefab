@@ -4308,6 +4308,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2197318449894141402}
   - {fileID: 8481661178444250573}
   - {fileID: 6847823773384404227}
   - {fileID: 5778387667267623185}
@@ -4386,21 +4387,8 @@ MonoBehaviour:
   waypointList:
     circuit: {fileID: 3780926239443682890}
     items:
-    - {fileID: 7103331413724749712}
-    - {fileID: 3632809832508583451}
-    - {fileID: 407956973027356387}
-    - {fileID: 4204861319235007874}
-    - {fileID: 3662093929152894175}
-    - {fileID: 3761278808963010381}
-    - {fileID: 2668665150716373891}
-    - {fileID: 2405366345157266886}
-    - {fileID: 6131877589681658751}
-    - {fileID: 6399843340531053620}
-    - {fileID: 7354111265157421377}
-    - {fileID: 9114765447078047117}
-    - {fileID: 5778387667267623185}
-    - {fileID: 6847823773384404227}
     - {fileID: 8481661178444250573}
+    - {fileID: 2197318449894141402}
     - {fileID: 586509140359484009}
     - {fileID: 4806809202303695496}
     - {fileID: 3749790690757799629}
@@ -4447,6 +4435,20 @@ MonoBehaviour:
     - {fileID: 1171304501713626028}
     - {fileID: 2313660932435151686}
     - {fileID: 859434439402146289}
+    - {fileID: 7103331413724749712}
+    - {fileID: 3632809832508583451}
+    - {fileID: 407956973027356387}
+    - {fileID: 4204861319235007874}
+    - {fileID: 3662093929152894175}
+    - {fileID: 3761278808963010381}
+    - {fileID: 2668665150716373891}
+    - {fileID: 2405366345157266886}
+    - {fileID: 6131877589681658751}
+    - {fileID: 6399843340531053620}
+    - {fileID: 7354111265157421377}
+    - {fileID: 9114765447078047117}
+    - {fileID: 5778387667267623185}
+    - {fileID: 6847823773384404227}
   smoothRoute: 0
   editorVisualisationSubsteps: 500
 --- !u!1 &853856539546868784
@@ -5116,7 +5118,7 @@ Transform:
   m_GameObject: {fileID: 920834509394372265}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 316.2, y: 0, z: -139.1}
+  m_LocalPosition: {x: 316.2, y: 0, z: 36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22654,7 +22656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnParams:
-    SpawnPoint: {fileID: 7103331413724749712}
+    SpawnPoint: {fileID: 8481661178444250573}
     Track: {fileID: 3780926239443682890}
     SpawnDriver: 1
     SpawnPassenger: 1
@@ -25479,6 +25481,86 @@ MonoBehaviour:
     - {fileID: 6901308369819414521}
   smoothRoute: 0
   editorVisualisationSubsteps: 500
+--- !u!1 &4869368568289089472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2197318449894141402}
+  - component: {fileID: 6401384222272874757}
+  - component: {fileID: 5964193115733541237}
+  m_Layer: 5
+  m_Name: WP1 (62)
+  m_TagString: WP
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2197318449894141402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869368568289089472}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 316.2, y: 0, z: -139.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6063814981090037802}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &6401384222272874757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869368568289089472}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.25, y: 4, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &5964193115733541237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869368568289089472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAICar: {fileID: 0}
+  Type: 1
+  speed: 30
+  acceleration: 2
+  BlinkerState: 0
+  jerk: 5
+  causeToYield: 0
+  EyeContactWhileYielding: 0
+  EyeContactAfterYielding: 0
+  yieldTime: 0
+  brakingAcceleration: 0
+  YieldingEyeContactSince: 0
+  YieldingEyeContactUntil: 0
+  customBehaviourData: []
 --- !u!1 &4927458586901630506
 GameObject:
   m_ObjectHideFlags: 0
