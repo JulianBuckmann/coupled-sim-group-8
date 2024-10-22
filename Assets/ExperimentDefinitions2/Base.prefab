@@ -22654,8 +22654,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnParams:
-    SpawnPoint: {fileID: 8308297531713487016}
-    Track: {fileID: 2893685017489404567}
+    SpawnPoint: {fileID: 7103331413724749712}
+    Track: {fileID: 3780926239443682890}
     SpawnDriver: 1
     SpawnPassenger: 1
     Car: {fileID: 7713759469045616529, guid: 1baf460ab026f1247ab4696be569ffae, type: 3}
